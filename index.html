@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cryptocurrency Markets</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<div class="nav-container">
+			<div class="logo-container">
+				<div class="logo">
+				<i class="fa fa-globe" aria-hidden="true"></i>
+					CryptoMarkets
+				</div>
+			</div>
+
+			<div class="search-bar">
+				<form action="#">
+					<input class='nav-input' type="text">
+				</form>
+				<div class="search-icon">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="showcase-container">
+		<div class="showcase-img">
+			<img src="./img/candle.jpg" alt="">
+		</div>
+		<div class="showcase-header-container">
+			<h1>Real Time <br>Cryptocurrency Information</h1>
+			<button class='showcase-btn'>Get started</button>
+		</div>
+	</div>
+
+	<div class="top5-container">
+		<h3>Top 5 Cryptocurrencies by Market Cap</h3>
+		<div class="crypto-container top5-header">
+			<div class="header-rank">#</div>
+			<div class="header-name">Name</div>
+			<div class="header-market-cap">Market Cap</div>
+			<div class="header-price">Price</div>
+			<div class="header-circulating-supply">Circulating Supply</div>
+		</div>
+
+		<div class="crypto-container first">
+			<div class="crypto-rank">1</div>
+			<div class="crypto-name"></div>
+			<div class="crypto-market-cap"></div>
+			<div class="crypto-price"></div>
+			<div class="crypto-circulating-supply"></div>
+		</div>
+
+		<div class="crypto-container second">
+			<div class="crypto-rank">2</div>
+			<div class="crypto-name"></div>
+			<div class="crypto-market-cap"></div>
+			<div class="crypto-price"></div>
+			<div class="crypto-circulating-supply"></div>
+		</div>
+		<div class="crypto-container third">
+			<div class="crypto-rank">3</div>
+			<div class="crypto-name"></div>
+			<div class="crypto-market-cap"></div>
+			<div class="crypto-price"></div>
+			<div class="crypto-circulating-supply"></div>
+		</div>
+		<div class="crypto-container fourth">
+			<div class="crypto-rank">4</div>
+			<div class="crypto-name"></div>
+			<div class="crypto-market-cap"></div>
+			<div class="crypto-price"></div>
+			<div class="crypto-circulating-supply"></div>
+		</div>
+		<div class="crypto-container fifth">
+			<div class="crypto-rank">5</div>
+			<div class="crypto-name"></div>
+			<div class="crypto-market-cap"></div>
+			<div class="crypto-price"></div>
+			<div class="crypto-circulating-supply"></div>
+		</div>
+	</div>
+
+	<div class="top5-graph-container">
+		<div class="canvas-container">
+			<canvas id="myCanvas" height='400' width='400'></canvas>
+		</div>
+		
+	</div>
+
+
+	
+
+
+	<script src='./app.js'></script>
+</body>
+</html>

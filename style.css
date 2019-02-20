@@ -1,0 +1,195 @@
+:root {
+	--main-bg-color: #0CDF3A;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* start nav*/
+
+nav {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	border-bottom: 2px solid #000;
+}
+
+.nav-container {
+	min-width: 900px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo-container {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	font-size: 1.4rem;
+}
+
+.fa-globe {
+	padding-right: 5px;
+}
+
+.search-bar {
+	float: right;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 5px;
+	line-height: normal;
+	border: 1px solid black;
+}
+
+.search-bar form {
+	float: left;
+}
+
+.search-icon {
+	float: right;
+	padding-left: 15px;
+}
+
+.nav-input, .nav-input:focus {
+	border: none;
+	outline: none;
+	font-size: 1.4rem;
+	width: 200px;
+}
+
+
+/* end nav */
+
+/*start showcase*/
+
+.showcase-container {
+	position: relative;
+}
+
+.showcase-img {
+	opacity: 0.8;
+}
+
+.showcase-header-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+}
+
+.showcase-btn {
+	padding: 7px;
+	margin-top: 10px;
+	background-color: var(--main-bg-color);
+	border: none;
+	border-radius: 5px;
+}
+
+.showcase-btn:hover {
+	cursor: pointer;
+}
+
+/*end showcase*/
+
+/*start top5 crypto container*/
+.top5-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 900px;
+	margin: 50px auto 0;
+	align-items: center;
+}
+
+.crypto-container {
+	/*flex: 0 0 300px;*/
+	min-width: 100%;
+	display: grid;
+	grid-template-columns: 15px repeat(4, 1fr);
+	grid-row-gap: 40px;
+	justify-items: end;
+}
+
+.top5-header {
+	margin-top: 20px;
+	font-style: italic;
+	opacity: 0.5;
+}
+
+.header-name {
+	justify-self: start;
+	padding-left: 10px;
+}
+
+.first {
+	margin-top: 5px;
+}
+
+.crypto-rank, .header-rank {
+	justify-self: start;
+}
+
+.crypto-name {
+	justify-self: start;
+	padding-left: 10px;
+}
+
+.first, .second, .third, .fourth {
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.second, .third, .fourth, .fifth {
+	padding-top: 10px;
+}
+
+/*end top5 grid*/
+
+/*start canvas container*/
+
+.top5-graph-container {
+	margin-top: 50px;
+	height: 500px;
+	background-color: #F8F8F8;
+}
+
+.canvas-container {
+	padding-top: 50px;
+}
+
+#myCanvas {
+	/*height: 400px;*/
+	/*width: 400px;*/
+	/*border: 1px solid black;*/
+	background-color: white;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*end canvas container*/
